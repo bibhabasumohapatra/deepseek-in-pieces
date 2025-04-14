@@ -1,6 +1,15 @@
 import torch
 import torch.nn as nn
 
+'''
+To-Do:
+Length Extrapolatable Rotary Embeddings
+Interpolating Sequence Positions
+Inference Key-Value Cache
+MultiModal for Image and Audio supported changes
+
+'''
+
 class RoPE(nn.Module):
   def __init__(self, num_theta=10000, d=64) -> torch.Tensor:
     super().__init__()
